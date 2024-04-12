@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Story template</title>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <link href="basic-styles.css" rel="stylesheet">
+  <link href="model-styles.css" rel="stylesheet">
+  <link href="scrolly-styles.css" rel="stylesheet">
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+  <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+</head>
+
+<body>
+  <div class='content'>
+    <div class="header">
+      <h1>A template for object-based 3D scrollytelling (with scrollama)</h1>
+      <p class="subhead">Here is the subhead or additional content you want to add in</p>
+    </div>
+    <p>Open in VS Code, right click the filename, open with live server.</p>
+    <p>
+      Amet id elit et labore cillum elit sit deserunt do reprehenderit occaecat. Enim ipsum sit do sunt aliqua in est.
+      Exercitation consectetur est anim excepteur dolor.
+    </p>
+    <p>
+      Aliquip laboris ea non ex incididunt tempor. Ad incididunt esse duis
+      occaecat proident nostrud. Minim non est proident consequat excepteur nulla ad esse exercitation amet id.
+    </p>
+    <p>
+      Now sure what you want to look at? Check out <a
+        href="https://sketchfab.com/search?q=museum&sort_by=-followerCount&type=users">museums on Sketchfab</a>. Once
+      you're browsing, try <a href="https://sketchfab.com/NHMWien/collections">collections</a> instead of just <a
+        href="https://sketchfab.com/NHMWien/models">models</a>.
+    </p>
+  </div>
+
+  <section class="scrolly-container" id="scroll-model">
+    <div class="sticky-thing">
+      <!-- 3D stuff goes below this line -->
+      <!-- be sure to add min-camera-orbit="auto auto -1000%" max-camera-orbit="auto auto 1000%" -->
+      <model-viewer src="b737-800_model.glb" camera-orbit="-11.1deg 79.24deg 85.7m" field-of-view="17.04deg" min-camera-orbit="auto auto -1000%" max-camera-orbit="auto auto 1000%">
+        <button class="Hotspot" slot="hotspot-1" data-position="-3.608276333916764m 2.0726624686057558m -2.2381157552733546m" data-normal="0.4537287301993563m 0.8766687906753351m -0.1599439615850663m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Engine cover ripped apart</div>
+        </button><button class="Hotspot" slot="hotspot-2" data-position="4.093115155121087m 1.1302146306078846m -3.859628342860395m" data-normal="0.0921995603904635m -0.9667746952997448m -0.23842384442813436m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Engine rear shoot flames </div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="1.5618809839028165m 3.1777527202460822m -7.135953308037899m" data-normal="0.9617797013268332m 0.27382440745058834m -4.134633542905178e-8m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Door blew out</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="-0.35152608877867897m 3.3346515295294563m 9.792954168359408m" data-normal="-0.40730540500635154m 0.6381061975184483m 0.6533932871870962m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Windshield broken</div>
+    </button>
+    </model-viewer>
+      <!-- 3D stuff goes above this line -->
+    </div>
+
+    <div class="scrolly-overlay">
+      <div class="step" id="step-one">
+        <p>On April 7, 2024, a Southwest Airlines Boeing 737-800 from Denver, Colorado to Houston, Texas, made an emergency return after its engine cover ripped apart during takeoff.</p>
+      </div>
+      <div class="step" id="step-two">
+        <p>On March 4, 2024, a United Airlines Boeing 737-900 jet took off from Houston, Texas, made an emergency landing after the rear of its engine shoot flames.</p>
+      </div>
+      <div class="step" id="step-three">
+        <p>On January 5, 2024, the plug door of a Boeing 737 MAX 9 aircraft of Alaska Airlines flew off at high altitude, causing an instant loss of cabin pressure. Four key bolts were missing.</p>
+      </div>
+      <div class="step" id="step-four">
+        <p>On January 13, 2024, a Boeing 737 of Japan's All Nippon Airways Domestic line had a crack appeared in the cockpit window. The same problem occurred when an Alaska Airlines Boeing 737-800 landed at Portland International Airport in Oregon on March 17, 2024.</p>
+      </div>
+      <div class="step" id="step-five">
+        <p>This is fifth step</p>
+      </div>
+    </div>
+  </section>
+
+  <div class='content'>
+    <p>
+      Occaecat eu magna id aliqua. Amet cupidatat officia enim eu sunt pariatur tempor consequat culpa ullamco proident.
+      In voluptate ad sit enim ipsum dolore. Aliquip laboris ea non ex incididunt tempor. Ad incididunt esse duis
+      occaecat proident nostrud. Minim non est proident consequat excepteur nulla ad esse exercitation amet id.
+    </p>
+    <p>
+      Dolor consectetur sint excepteur officia quis do mollit commodo deserunt dolor adipisicing. Minim adipisicing
+      aliqua ipsum voluptate elit amet do do ullamco Lorem Lorem consectetur. Amet cillum do laboris nulla.
+    </p>
+    <p>
+      Dolor consectetur sint excepteur officia quis do mollit commodo deserunt dolor adipisicing. Minim adipisicing
+      aliqua ipsum voluptate elit amet do do ullamco Lorem Lorem consectetur. Amet cillum do laboris nulla.
+    </p>
+  </div>
+
+  <div class="footer">
+    <div class="content">
+      <p>You can find the code for this template <a href="https://github.com/jsoma/page-templates/">here</a>.
+        Delete
+        these lines
+        when you use it, and don't forget to change the &lt;title&gt; tag!!!</p>
+    </div>
+  </div>
+
+  <!-- Loads <model-viewer> for browsers: -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <script>
+    /* Scrollytelling code goes under here */
+
+    var viewer = document.querySelector("model-viewer")
+
+    d3.select("#step-one").on("stepin", function () {
+    // camera-orbit="2.329deg 70.82deg 69.59m" field-of-view="15.12deg"
+      viewer.cameraOrbit = "2.329deg 70.82deg 69.59m";
+      viewer.fieldOfView = "15.12deg";
+      d3.select('[slot="hotspot-1"]').style('display', 'block');
+      d3.select('[slot="hotspot-2"]').style('display', 'none');
+      d3.select('[slot="hotspot-3"]').style('display', 'none');
+      d3.select('[slot="hotspot-4"]').style('display', 'none')
+    })
+
+    d3.select("#step-two").on("stepin", function () {
+      //camera-orbit="180.7deg 93.25deg 69.59m" field-of-view="15.12deg"
+      viewer.cameraOrbit = "180.7deg 93.25deg 69.59m";
+      viewer.fieldOfView = "15.12deg";
+      d3.select('[slot="hotspot-1"]').style('display', 'none');
+      d3.select('[slot="hotspot-2"]').style('display', 'block');
+      d3.select('[slot="hotspot-3"]').style('display', 'none');
+      d3.select('[slot="hotspot-4"]').style('display', 'none')
+    })
+
+    d3.select("#step-three").on("stepin", function () {
+      //camera-orbit="47.55deg 78.45deg 80.3m" field-of-view="16.79deg"
+      viewer.cameraOrbit ="47.55deg 78.45deg 80.3m";
+      viewer.fieldOfView="16.79deg";
+      d3.select('[slot="hotspot-1"]').style('display', 'none');
+      d3.select('[slot="hotspot-2"]').style('display', 'none');
+      d3.select('[slot="hotspot-3"]').style('display', 'block');
+      d3.select('[slot="hotspot-4"]').style('display', 'none')
+    })
+
+    d3.select("#step-four").on("stepin", function () {
+      //camera-orbit="0.3002deg 91.09deg 72.23m" field-of-view="16.3deg"
+      viewer.cameraOrbit ="0.3002deg 91.09deg 72.23m";
+      viewer.fieldOfView="16.3deg";
+      d3.select('[slot="hotspot-1"]').style('display', 'none');
+      d3.select('[slot="hotspot-2"]').style('display', 'none');
+      d3.select('[slot="hotspot-3"]').style('display', 'none');
+      d3.select('[slot="hotspot-4"]').style('display', 'block')
+    })
+  </script>
+
+  <script>
+      /*************
+      
+      This is the JavaScript that makes the scrolly work 
+      
+      *************/
+
+      /* 
+      This part attaches a scroll to the element with id="scroll-model"    
+      */
+
+      (() => {
+        const scroller = scrollama()
+
+        scroller
+          .setup({
+            parent: document.querySelector("#scroll-model"),
+            step: ".step",
+            offset: 0.6,
+            debug: false,
+          })
+          .onStepEnter(function ({ element, index, direction }) {
+            const event = new CustomEvent("stepin", { detail: { direction: direction } })
+            element.dispatchEvent(event)
+          })
+          .onStepExit(function ({ element, index, direction }) {
+            const event = new CustomEvent("stepout", { detail: { direction: direction } })
+            if (direction === "up" && element.previousElementSibling) {
+              const event = new CustomEvent("stepin", { detail: { direction: direction } })
+              element.previousElementSibling.dispatchEvent(event)
+            }
+          })
+
+        window.addEventListener("resize", scroller.resize)
+      })()
+  </script>
+</body>
+
+</html>
